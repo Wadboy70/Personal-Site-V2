@@ -1,13 +1,27 @@
 import React from 'react';
 
-import { SideBarContainer } from './Sidebar.styles.js'
+import { SidebarList, SidebarListItem, SidebarLink, SidebarImage } from './Sidebar.styles.js';
+import { SideBarContainer } from './Sidebar.styles.js';
 
-const LeftSidebar = () =>{
+import Email from '../../assets/Email.svg';
+
+const Sidebar = ({orientation, children, images}) =>{
+	console.log(images[0]);
 	return(
-		<SideBarContainer>
-
+		<SideBarContainer>]
+			<SidebarList>
+				{
+					images.map( (image, index)  => (
+						<SidebarListItem>
+							<SidebarLink>
+								<SidebarImage src = {image}/>
+							</SidebarLink>
+						</SidebarListItem>
+					))
+				}
+			</SidebarList>
 		</SideBarContainer>
 	);
 };
 
-export default LeftSidebar;
+export default Sidebar;
