@@ -3,18 +3,15 @@ import React from 'react';
 import { SidebarList, SidebarListItem, SidebarLink, SidebarImage } from './Sidebar.styles.js';
 import { SideBarContainer } from './Sidebar.styles.js';
 
-import Email from '../../assets/Email.svg';
-
 const Sidebar = ({orientation, children, images}) =>{
-	console.log(images[0]);
 	return(
-		<SideBarContainer>]
+		<SideBarContainer>
 			<SidebarList>
 				{
-					images.map( (image, index)  => (
+					images.map( (Logo, index)  => (
 						<SidebarListItem>
 							<SidebarLink>
-								<SidebarImage src = {image}/>
+								<Logo/>
 							</SidebarLink>
 						</SidebarListItem>
 					))

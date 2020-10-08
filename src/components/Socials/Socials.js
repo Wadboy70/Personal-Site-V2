@@ -1,11 +1,12 @@
 import React from 'react';
 
 import Sidebar from '../Sidebar/Sidebar';
+import { logos } from './Socials.styles';
 
-import Email from "../../assets/Email.svg";
 const Socials = () =>{
+
 	return(
-		<Sidebar images = {[Email]}/>
+		<Sidebar images = {logos}/>
 	);
 };
 
