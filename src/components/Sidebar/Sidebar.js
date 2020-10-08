@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { SidebarList, SidebarListItem, SidebarLink, SidebarImage } from './Sidebar.styles.js';
+import { SidebarList, SidebarListItem, SidebarLink } from './Sidebar.styles.js';
 import { SideBarContainer } from './Sidebar.styles.js';
 
 const Sidebar = ({orientation, children, images}) =>{
@@ -9,7 +9,7 @@ const Sidebar = ({orientation, children, images}) =>{
 			<SidebarList>
 				{
 					images.map( (Logo, index)  => (
-						<SidebarListItem>
+						<SidebarListItem key = {index}>
 							<SidebarLink>
 								<Logo/>
 							</SidebarLink>
