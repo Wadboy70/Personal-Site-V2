@@ -1,7 +1,10 @@
 import React from 'react';
 
-import { SideBarContainer } from './Sidebar.styles.js'
+import styled from 'styled-components';
 
+const SideBarContainer = styled.div`
+    
+`;
 const LeftSidebar = () =>{
 	return(
 		<SideBarContainer>

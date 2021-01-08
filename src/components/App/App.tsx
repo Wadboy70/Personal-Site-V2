@@ -1,11 +1,14 @@
 import React from 'react';
+import GlobalStyle from '../../globalStyles';
 import { AppContainer } from './App.styles';
 
 function App() {
   return (
-    <AppContainer>
-      Hello
-    </AppContainer>
+    <>
+      <GlobalStyle/>
+      <AppContainer>
+      </AppContainer>
+    </>
   );
 }
 
