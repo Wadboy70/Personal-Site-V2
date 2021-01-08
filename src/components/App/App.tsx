@@ -1,5 +1,6 @@
 import React from 'react';
 import GlobalStyle from '../../globalStyles';
+import SocialSidebar from '../SocialSidebar/SocialSidebar';
 import { AppContainer } from './App.styles';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <GlobalStyle/>
       <AppContainer>
+        <SocialSidebar/>
       </AppContainer>
     </>
   );

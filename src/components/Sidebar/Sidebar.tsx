@@ -1,16 +1,25 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
 import styled from 'styled-components';
 
-const SideBarContainer = styled.div`
-    
+interface SidebarProps {
+	left?: boolean;
+};
+
+const SideBarContainer = styled.div<SidebarProps>`
+	left: ${({left}) => left ? '50px' : 'auto'};
+	height: 100vh;
+	width: fit-content;
+	min-width: 30px;
+	background-color: #fff;
 `;
-const LeftSidebar = () =>{
+
+const Sidebar: FunctionComponent<SidebarProps> = ({left = true}) =>{
 	return(
-		<SideBarContainer>
+		<SideBarContainer left = {left}>
 
 		</SideBarContainer>
 	);
 };
 
-export default LeftSidebar;
+export default Sidebar;
