@@ -8,7 +8,9 @@ interface SidebarProps {
 };
 
 const SideBarContainer = styled.div<SidebarProps>`
-	left: ${({left}) => left ? '50px' : 'auto'};
+	position: fixed;
+	left: ${({left}) => left ? '0px' : 'auto'};
+	right: ${({left}) => left ? 'auto' : '0px'};
 	height: 100vh;
 	width: fit-content;
 	min-width: 30px;
@@ -19,7 +21,7 @@ const SideBarContainer = styled.div<SidebarProps>`
 	::before, ::after{
 		content: '';
 		display: inline-block;
-		height: 30vh;
+		height: 25vh;
 		width: 1px;
 		background-color: white;
 	}
