@@ -9,6 +9,12 @@ const GlobalStyle = createGlobalStyle`
     body{
         background: #242B66;
     }
+    .growOnHover{
+        transition: .5s transform;
+        :hover{
+            transform: scale(1.1, 1.1);
+        }
+    }
 `;
 
 export default GlobalStyle;

@@ -25,6 +25,9 @@ const SideBarContainer = styled.div<SidebarProps>`
 		width: 1px;
 		background-color: white;
 	}
+	> * {
+		margin: 0 4vw;
+	}
 `;
 
 const Sidebar: FunctionComponent<SidebarProps> = ({left = true, children}) =>{

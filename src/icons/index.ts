@@ -11,8 +11,20 @@ export default {
 };
 
 export const SocialIcons = [
-    Github,
-    LinkedIn,
-    Email,
-    Instagram
+    {
+        Icon: Github,
+        url: 'https://github.com/Wadboy70'
+    },
+    {
+        Icon: LinkedIn,
+        url: 'https://www.linkedin.com/in/oluwaseyi-oluwaleimu-307503142/'
+    },
+    {
+        Icon: Email,
+        url: 'mailto:s.oluwaleimu@gmail.com'
+    },
+    {
+        Icon: Instagram,
+        url: 'https://www.instagram.com/wadboy/'
+    }
 ];
