@@ -14,7 +14,7 @@ const SideBarContainer = styled.div<SidebarProps>`
 	height: 100vh;
 	width: fit-content;
 	min-width: 30px;
-	display: flex;
+	display: none;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
@@ -28,6 +28,10 @@ const SideBarContainer = styled.div<SidebarProps>`
 	> * {
 		margin: 0 4vw;
 	}
+	
+    @media only screen and (min-width: 768px) {
+        display: flex;
+    }
 `;
 
 const Sidebar: FunctionComponent<SidebarProps> = ({left = true, children}) =>{
