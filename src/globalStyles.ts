@@ -2,6 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
     *{   
+        font-family: 'Roboto', sans-serif;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -13,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
     .growOnHover{
         transition: .5s transform;
         :hover{
-            transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1) translateY(-5px);
         }
     }
 `;
