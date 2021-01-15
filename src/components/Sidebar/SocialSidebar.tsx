@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styled from 'styled-components/macro';
-import Sidebar from '../Sidebar/Sidebar';
+import Sidebar from './Sidebar';
 import { SocialIcons } from '../../icons';
 
 const Socials = styled.ul`
