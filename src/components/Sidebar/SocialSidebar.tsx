@@ -11,6 +11,10 @@ const Socials = styled.ul`
     flex-grow: 1;
     li{
         list-style-type: none;
+        svg{
+            min-height: 7vh;
+            width: auto;
+        }
 ;    }
 `;
 interface IconInfo {
