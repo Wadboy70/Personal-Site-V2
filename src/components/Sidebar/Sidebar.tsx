@@ -22,7 +22,7 @@ const SideBarContainer = styled.div<SidebarProps>`
 	::before, ::after{
 		content: '';
 		display: inline-block;
-		height: 25vh;
+		flex-grow: 1;
 		width: 1px;
 		background-color: white;
 	}
