@@ -14,7 +14,7 @@ const SideBarContainer = styled.div<SidebarProps>`
 	height: 100vh;
 	width: fit-content;
 	min-width: 30px;
-	max-width: 15vh;
+	max-width: 10vw;
 	display: none;
 	flex-direction: column;
 	align-items: center;
