@@ -1,5 +1,5 @@
 import React from 'react';
-import GlobalStyle from '../globalStyles';
+import GlobalStyle from '../utils/globalStyles';
 import SocialSidebar from './Sidebar/SocialSidebar';
 import styled from 'styled-components/macro';
 import EmailSidebar from './Sidebar/EmailSidebar';
