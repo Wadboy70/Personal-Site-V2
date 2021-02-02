@@ -9,6 +9,8 @@ const EmailBox = styled.a`
     font-family: 'Roboto Mono', serif;
     writing-mode: vertical-rl;
     text-decoration: none;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 `;
 const EmailSidebar = () =>{
 	return(
