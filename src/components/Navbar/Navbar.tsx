@@ -16,6 +16,7 @@ const Nav = styled.nav`
 const NavList = styled.ul`
     width: 80%;
     display: flex;
+    justify-content: space-between;
 `;
 const NavListItem = styled.li`
     list-style-type: none;

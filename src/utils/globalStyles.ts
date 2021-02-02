@@ -11,6 +11,9 @@ const GlobalStyle = createGlobalStyle`
     body{
         background: #242B66;
     }
+    a{
+        text-decoration: none;
+    }
     .growOnHover{
         transition: .5s transform;
         :hover{
